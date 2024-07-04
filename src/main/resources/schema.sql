@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS api_users (
+    id INT AUTO_INCREMENT NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS Todo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description VARCHAR(255) NOT NULL,
+    priority INT NOT NULL
+    );
+
+CREATE TABLE IF NOT EXISTS Run (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    kilometers INT NOT NULL,
+    created_at TIMESTAMP NOT NULL
+    );
