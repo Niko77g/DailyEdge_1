@@ -4,20 +4,17 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name= "api_users")
-public class User {
+public class MyUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(nullable = false)
     private String username;
-    @Column(nullable = false)
     private String password;
-    @Column(nullable = false)
     private String role;
 
-    public User() {}
+    public MyUser() {}
 
-    public User(Integer id, String username, String password, String role) {
+    public MyUser(Integer id, String username, String password, String role) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -32,12 +29,12 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
+    public String getUsername() {
         return username;
     }
 
-    public void setName(String name) {
-        this.username = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
