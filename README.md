@@ -11,7 +11,7 @@ Požiadavky na spustenie aplikacie:
 <div>Maven= latest version</div>
 
 Postup inštalacie Spring Web Applications:
-<div>1. Skopirovanie GitHub linku</div>
+<div>1. Skopirovanie GitHub linku do prikazového riadka v Intellj, alebo VSC. </div>
  <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="git@github.com:Niko77g/DailyEdge_1.git">
-  <pre lang="terminal" class="notranslate"><code>git@github.com:Niko77g/DailyEdge_1.git</code></pre>
+  <pre lang="terminal" class="notranslate"><code>git clone git@github.com:Niko77g/DailyEdge_1.git</code></pre>
 </div>
