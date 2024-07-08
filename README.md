@@ -18,9 +18,9 @@ Tento projekt je jeden zo serie projektov, ktoré vznikli pri mojom postupnom u�
 <div>2. Stiahnutie JDK 21 pomocou Intellj:</div>
 <div><li>Chodte do <strong>Settings</strong> a v založke <strong>Project Structure</strong> chodte do založky <strong>SDKs</strong> </li></div>
 <div> <li>Kliknite na plusko a zvolte položku <strong>download JDK</strong>.</div></li>
-<img width="457" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/2f53fdcf-311e-4b0c-b677-bd4ec082b496">
+<img width="350" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/2f53fdcf-311e-4b0c-b677-bd4ec082b496">
 <div>V prípade problemom s Maven Dependecies odporučám aktualizacovať data v Maven založke pre Intellj:</div>
-<img width="269" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/90a50b6a-4303-4178-b87c-6d65763e6cda">
+<img width="350" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/90a50b6a-4303-4178-b87c-6d65763e6cda">
 
 # USAGE
 <strong>Functions:</strong>
