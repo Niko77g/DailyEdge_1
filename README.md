@@ -18,4 +18,7 @@ Postup inštalacie Spring Web Applications:
 <div>2. Stiahnutie JDK 21 pomocou Intellj:</div>
 <div>Chodte do Settings a v založke Project Structure chodte do založky SDKs a nasledne stači kliknuť na plusko a zvoliť položku download JDK.</div>
 <img width="457" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/2f53fdcf-311e-4b0c-b677-bd4ec082b496">
+<div>V prípade problemom s Maven Dependecies odporučám aktualizacovať data v Maven založke pre Intellj:</div>
+<img width="269" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/90a50b6a-4303-4178-b87c-6d65763e6cda">
+
 
