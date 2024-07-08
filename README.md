@@ -5,12 +5,12 @@ Aplikacia vytvorená za učelom naučenia a pochopenia logiky vzniku Web API pom
 Tento projekt je jeden zo serie projektov, ktoré vznikli pri mojom postupnom učeni a programovanim Spring Boot aplikacie. Aplikacia DailyEdge vznikla hlavne pre skombinovanie viacero funkcii do jednej, tak aby som mal prehlad o svojích vykonov a o aktualných TodoListov a taktiež práce s databazou.
 
 # Quick Start
-Požiadavky na spustenie aplikacie:
+<strong>Požiadavky na spustenie aplikacie:</strong>
 <div>Intellj Community Edition/Ultimate Edition version= 2024.1.3</div>
 <div>Java SDK version= 21</div>
 <div>Maven= latest version</div>
 
-Postup inštalacie Spring Web Applications:
+<strong>Postup inštalacie Spring Web Applications:</strong>
 <div>1. Skopirovanie GitHub linku do prikazového riadka v Intellj, alebo VSC. </div>
  <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="git@github.com:Niko77g/DailyEdge_1.git">
   <pre lang="terminal" class="notranslate"><code>git clone git@github.com:Niko77g/DailyEdge_1.git</code></pre>
@@ -32,6 +32,11 @@ Postup inštalacie Spring Web Applications:
 <div><li>Vytvorenie noveho ToDoListu</li></div>
 <div><li>Odstranenie TodoList zaznamu</li></div>
 <div><li>Aktualizovanie TodoList zaznamu</li></div>
+
+# FUTURE PLANS
+<div>1.Dokončenie podstranky pre admin/home a funkcionalita pre frontend stranku</div>
+<div>2.Implementacia novej funkcionality EnglishCards</div>
+<div>3.Vytvorenie podstranku pre Usera a Admina funkcionality EnglishCards</div>
 
 # SOURCE
 <strong><div>Spring boot:</strong> https://youtu.be/31KTdfRH6nY?si=BMhIQ27CevSPEHnC</div>
