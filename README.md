@@ -1,8 +1,8 @@
 # Dailyedge
-Aplikacia je vytvorená za učelom naučenia a pochopenia logiky vzniku Web API pomocou Spring Boot. Aplikacia využíva Spring Security pre registraciu a prihlasenie nových uživatelov do aplikacii. 
+Aplikaciu som vytvoril s cieľom naučiť sa a pochopiť principy fungovania Web API pomocou Spring Boot. Aplikacia využíva Spring Security pre registraciu a prihlasenie nových uživatelov do aplikacii. 
 
 # WHY?
-Cielom tohto projektu je integrovať viacero funkcii do jednej aplikacii menom DailyEdge, ktorá poskytuje zakladné informácie o športových vykonch a uloh. V buducnosti pribudne aj implementacia EnglishCards pre učenie sa anglického jazyka. Táto aplikacia služí ako názorna demonštracia fungovania s databazou, spring security a zakladnym webových rozhranim.
+Cielom tohto projektu je integrovať viacero funkcii do jednej aplikacii s názvom DailyEdge, ktorá poskytuje zakladné informácie o športových vykonch a uloh. V buducnosti bude rozširená o implementaciu EnglishCards pre učenie sa anglického jazyka. Táto aplikacia služí ako názorna demonštracia fungovania s databazou, spring security a zakladnym webových rozhranim.
 
 # Quick Start
 <strong>Požiadavky na spustenie aplikacie:</strong>
