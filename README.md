@@ -33,8 +33,8 @@ Postup inštalacie Spring Web Applications:
 <div><li>Aktualizovanie TodoList zaznamu</li></div>
 
 # SOURCE
-Spring boot: https://youtu.be/31KTdfRH6nY?si=BMhIQ27CevSPEHnC
-Spring Boot Security: https://youtu.be/9J-b6OlPy24?si=1UUQlhDVz7Jl8Aom
-Documentation Spring: https://docs.spring.io/spring-framework/reference/index.html
+<strong><div>Spring boot:</strong> https://youtu.be/31KTdfRH6nY?si=BMhIQ27CevSPEHnC</div>
+<strong><div>Spring Boot Security: </strong>https://youtu.be/9J-b6OlPy24?si=1UUQlhDVz7Jl8Aom</div>
+<strong><div>Documentation Spring:</strong> https://docs.spring.io/spring-framework/reference/index.html</div>
 
 
