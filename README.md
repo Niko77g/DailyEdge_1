@@ -22,15 +22,19 @@ Postup inštalacie Spring Web Applications:
 <img width="269" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/90a50b6a-4303-4178-b87c-6d65763e6cda">
 
 # USAGE
-Functions:
-<div>Registracia uživatela/ Prihlasenie uživatelia</div>
-<div>Vytvorenie noveho Run </div>
-<div>Odstranenie Run</div>
-<div>Aktualizovanie Run</div>
-<div>Porovnanie s predchadzajucim</div>
-<div>Vytvorenie noveho ToDoListu</div>
-<div>Odstranenie TodoList zaznamu</div>
-<div>Aktualizovanie TodoList zaznamu</div>
+<strong>Functions:</strong>
+<div><li>Registracia uživatela/ Prihlasenie uživatelia</li></div>
+<div><li>Vytvorenie noveho Run </li></div>
+<div><li></lid>Odstranenie Run</li></div>
+<div><li>Aktualizovanie Run</li></div>
+<div><li>Porovnanie s predchadzajucim</li></div>
+<div><li>Vytvorenie noveho ToDoListu</li></div>
+<div><li>Odstranenie TodoList zaznamu</li></div>
+<div><li>Aktualizovanie TodoList zaznamu</li></div>
 
+# SOURCE
+Spring boot: https://youtu.be/31KTdfRH6nY?si=BMhIQ27CevSPEHnC
+Spring Boot Security: https://youtu.be/9J-b6OlPy24?si=1UUQlhDVz7Jl8Aom
+Documentation Spring: https://docs.spring.io/spring-framework/reference/index.html
 
 
