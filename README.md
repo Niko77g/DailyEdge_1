@@ -11,4 +11,5 @@ Požiadavky na spustenie aplikacie:
 <div>Maven= latest version</div>
 
 Postup inštalacie Spring Web Applications:
-1.
+<div>1. Skopirovanie GitHub linku</div>
+ <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml">
