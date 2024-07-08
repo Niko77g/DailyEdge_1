@@ -23,14 +23,14 @@ Postup inštalacie Spring Web Applications:
 
 # USAGE
 Functions:
-Registracia uživatela/ Prihlasenie uživatelia
-Vytvorenie noveho Run 
-Odstranenie Run
-Aktualizovanie Run
-Porovnanie s predchadzajucim
-Vytvorenie noveho ToDoListu
-Odstranenie TodoList zaznamu
-Aktualizovanie TodoList zaznamu
+<div>Registracia uživatela/ Prihlasenie uživatelia</div>
+<div>Vytvorenie noveho Run </div>
+<div>Odstranenie Run</div>
+<div>Aktualizovanie Run</div>
+<div>Porovnanie s predchadzajucim</div>
+<div>Vytvorenie noveho ToDoListu</div>
+<div>Odstranenie TodoList zaznamu</div>
+<div>Aktualizovanie TodoList zaznamu</div>
 
 
 
