@@ -6,9 +6,9 @@ Tento projekt je jeden zo serie projektov, ktoré vznikli pri mojom postupnom u�
 
 # Quick Start
 Požiadavky na spustenie aplikacie:
-Intellj Community Edition/Ultimate Edition version= 2024.1.3
-Java SDK version= 21
-Maven= latest version
+<div>Intellj Community Edition/Ultimate Edition version= 2024.1.3</div>
+<div>Java SDK version= 21</div>
+<div>Maven= latest version</div>
 
 Postup inštalacie Spring Web Applications:
 1.
