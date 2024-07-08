@@ -15,3 +15,7 @@ Postup inštalacie Spring Web Applications:
  <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="git@github.com:Niko77g/DailyEdge_1.git">
   <pre lang="terminal" class="notranslate"><code>git clone git@github.com:Niko77g/DailyEdge_1.git</code></pre>
 </div>
+<div>2. Stiahnutie JDK 21 pomocou Intellj:</div>
+<div>Chodte do Settings a v založke Project Structure chodte do založky SDKs a nasledne stači kliknuť na plusko a zvoliť položku download JDK.</div>
+<img width="457" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/2f53fdcf-311e-4b0c-b677-bd4ec082b496">
+
