@@ -21,4 +21,16 @@ Postup inštalacie Spring Web Applications:
 <div>V prípade problemom s Maven Dependecies odporučám aktualizacovať data v Maven založke pre Intellj:</div>
 <img width="269" alt="image" src="https://github.com/Niko77g/DailyEdge_1/assets/94113127/90a50b6a-4303-4178-b87c-6d65763e6cda">
 
+# USAGE
+Functions:
+Registracia uživatela/ Prihlasenie uživatelia
+Vytvorenie noveho Run 
+Odstranenie Run
+Aktualizovanie Run
+Porovnanie s predchadzajucim
+Vytvorenie noveho ToDoListu
+Odstranenie TodoList zaznamu
+Aktualizovanie TodoList zaznamu
+
+
 
