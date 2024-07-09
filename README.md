@@ -5,7 +5,7 @@ I created this application to learn and understand the principles of Web API usi
 The aim of this project is to integrate several functions into one application called DailyEdge, which provides basic information about sports performances and tasks. In the future, it will be extended with the implementation of EnglishCards for English language learning. This application serves as a demonstration of how to work with the database, spring security and the basic web interface.
 
 # Quick Start
-<strong>Požiadavky na spustenie aplikacie:</strong>
+<strong>Requirements to run the application:</strong>
 <div>Intellj Community Edition/Ultimate Edition version= 2024.1.3</div>
 <div>Java SDK version= 21</div>
 <div>Maven= latest version</div>
