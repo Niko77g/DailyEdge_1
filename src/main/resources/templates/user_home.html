@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>User Home</title>
@@ -70,6 +70,22 @@
         button[type=submit]:hover {
             background-color: #45a049;
         }
+        .home-button {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .home-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -92,9 +108,16 @@
             <td th:text="${run.kilometers}">0</td>
             <td th:text="${#dates.format(run.created_at, 'yyyy-MM-dd HH:mm:ss')}">2024-07-08 18:34:46</td>
             <td>
-                <form action="/user/runs/delete/{id}" method="post">
+                <form action="/user/delete" method="post">
                     <input type="hidden" name="id" th:value="${run.id}">
                     <button type="submit">Delete</button>
+                </form>
+                <form action="/user/update" method="post">
+                    <input type="hidden" name="id" th:value="${run.id}">
+                    <input type="text" name="title" th:value="${run.title}" required>
+                    <input type="number" name="kilometers" th:value="${run.kilometers}" required>
+                    <input type="hidden" name="created_at" th:value="${#dates.format(run.created_at, 'yyyy-MM-dd HH:mm:ss')}">
+                    <button type="submit">Update</button>
                 </form>
             </td>
         </tr>
@@ -110,5 +133,6 @@
         <button type="submit">Add Run</button>
     </form>
 </div>
+<a href="/home" class="home-button">Home</a>
 </body>
 </html>

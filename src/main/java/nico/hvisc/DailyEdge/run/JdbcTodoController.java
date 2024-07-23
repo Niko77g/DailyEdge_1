@@ -20,13 +20,13 @@ public class JdbcTodoController implements TodoRepository {
     }
     @Override
     public List<Todo> findAllBy() {
-        return jdbcTemplate.query("select * from Todo",
+        return jdbcTemplate.query("select * from todo",
                 (rs, rowNum) -> new Todo(rs.getInt("id"),rs.getString("name"),rs.getString("description"),rs.getInt("priority")));
     }
 
     @Override
     public Optional<Todo> findById(Integer id) {
-        return jdbcTemplate.query("select * from Todo where id = ?", new Object[]{id}, rs -> {
+        return jdbcTemplate.query("select * from todo where id = ?", new Object[]{id}, rs -> {
             if (rs.next()) { return Optional.of(new Todo(rs.getInt("id"),
                     rs.getString("name"), rs.getString("description"),rs.getInt("priority")
             ));
@@ -49,17 +49,17 @@ public class JdbcTodoController implements TodoRepository {
 
     @Override
     public void update(Todo todo, Integer id) {
-        jdbcTemplate.update("update Todo set name =?, description =?, priority =? where id = ?",todo.getName(), todo.getDescription(),todo.getPriority(),id);
+        jdbcTemplate.update("update todo set name =?, description =?, priority =? where id = ?",todo.getName(), todo.getDescription(),todo.getPriority(),id);
     }
 
     @Override
     public void deleteById(Integer id) {
-        jdbcTemplate.update("delete from Todo where id = ?", id);
+        jdbcTemplate.update("delete from todo where id = ?", id);
     }
 
     @Override
     public List<Todo> findByUserName(String userName) {
-        return jdbcTemplate.query("select * from Todo where name=?", new Object[]{userName},
+        return jdbcTemplate.query("select * from todo where name=?", new Object[]{userName},
                 (rs, rowNum) -> new Todo(rs.getInt("id"),rs.getString("name"),rs.getString("description"),rs.getInt("priority")));
 
     }

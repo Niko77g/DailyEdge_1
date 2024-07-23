@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  mysql:
+    container_name: 'guide-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=mydatabase'
+      - 'MYSQL_PASSWORD=secret'
+      - 'MYSQL_ROOT_PASSWORD=verysecret'
+      - 'MYSQL_USER=myuser'
+    ports:
+      - '3306:3306'
+
+  phpmyadmin:
+    container_name: 'phpmyadmin'
+    image: 'phpmyadmin/phpmyadmin:latest'
+    ports:
+      - '8877:80'
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+      - PMA_USER=myuser
+      - PMA_PASSWORD=secret
+    depends_on:
+      - mysql

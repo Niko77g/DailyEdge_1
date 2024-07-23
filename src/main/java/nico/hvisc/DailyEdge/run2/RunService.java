@@ -2,6 +2,8 @@ package nico.hvisc.DailyEdge.run2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -34,6 +36,13 @@ public class RunService {
     }
     public void deleteById(int id) {
         runRepository.deleteById(id);
+    }
+    public Run update( Run run, int id) {
+        Run temprun = findById(id);
+        temprun.setTitle(run.getTitle());
+        temprun.setKilometers(run.getKilometers());
+        temprun.setCreated_at(run.getCreated_at());
+        return runRepository.update(temprun, id);
     }
     public List<Run> findByRunName(String runName) {
         return runRepository.findByRunName(runName);

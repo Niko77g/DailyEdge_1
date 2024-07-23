@@ -37,16 +37,33 @@ public class HomeController {
         return "user_home";
     }
     @GetMapping("/register")
-    public String register(MyUser user) {
+    public String showRegisterForm(Model model) {
+        model.addAttribute("user", new MyUser());
+        return "home";
+    }
+
+    @PostMapping("/register")
+    public String register(@ModelAttribute MyUser user, Model model) {
+        System.out.println("Registering user: " + user);
+        if (user.getPassword() == null || user.getPassword().isEmpty()) {
+            model.addAttribute("error", "Password cannot be empty");
+            return "home";
+        }
+        if(userRepository.findByUsername(user.getUsername()).isPresent()){
+            model.addAttribute("error", "Username is already use.");
+            return "home";
+        }
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userRepository.save(user);
+        MyUser newUser = userRepository.save(user);
+        model.addAttribute("user", newUser);
         return "redirect:/user/home";
     }
-    @PostMapping("/register")
-    public String register(@ModelAttribute MyUser user, Model model){
-        user.setPassword(passwordEncoder.encode(user.getPassword()));
-        MyUser newuser = userRepository.save(user);
-        model.addAttribute("User registered successfully", newuser);
+    @GetMapping("/login")
+    public String showLoginForm() {
+        return "login";
+    }
+    @PostMapping("/login")
+    public String login(@ModelAttribute MyUser user, Model model){
         return "redirect:/user/home";
     }
     @PostMapping("/user/run")
@@ -55,6 +72,17 @@ public class HomeController {
         Iterable<Run> runs = runService.findAll();
         System.out.println("Runs after saving: " + runs);
         model.addAttribute("runs", runs);
+        return "redirect:/user/home";
+    }
+    @PostMapping("/user/delete")
+    public String removerun(@RequestParam int id){
+        runService.deleteById(id);
+        return "redirect:/user/home";
+
+    }
+    @PostMapping("/user/update")
+    public String updaterun(@ModelAttribute Run run, @RequestParam int id){
+        runService.update(run,id);
         return "redirect:/user/home";
     }
 

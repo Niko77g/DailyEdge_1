@@ -7,7 +7,8 @@ public interface RunRepository {
     List<Run> findAllBy();
     Optional<Run> findById(Integer id);
     void create(Run run);
-    void update(Run run, Integer id);
+    Run update(Run run, Integer id);
+    //Run save(Run run);
     void deleteById(Integer id);
     List<Run> findByRunName(String userName);
     Integer compareRun(Run run1, Run run2);

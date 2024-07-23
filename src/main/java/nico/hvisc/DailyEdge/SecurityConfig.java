@@ -26,12 +26,15 @@ public class SecurityConfig {
         return http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(registry -> {
-            registry.requestMatchers("/home","/register/**","/h2-console/**").permitAll();
+            registry.requestMatchers("/home","/register/**","/h2-console/**","/login").permitAll();
             registry.requestMatchers("/admin/**").hasRole("ADMIN");
             registry.requestMatchers("/user/**").hasAnyRole("USER","ADMIN");
             registry.anyRequest().authenticated();
         } )
-                .formLogin(AbstractAuthenticationFilterConfigurer::permitAll)
+                .formLogin(httpSecurityFormLoginConfigurer -> {
+                    httpSecurityFormLoginConfigurer.loginPage("/login").defaultSuccessUrl("/user/home").permitAll();
+                })
+
                 .build();
     }
     @Bean
